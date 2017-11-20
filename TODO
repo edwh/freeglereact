@@ -1,0 +1,19 @@
+iznik code which needs looking at:
+- Router is only partial copy
+- Scan original main.js
+- Scan original pageheader.php
+
+Retired use of lib in favour of NPM packages, with the following exceptions which need reviewing or tidying:
+- Combodate is not on NPM - added in src
+- jquery-showfirst not on NPM, added in src.  showlast is ours, I think.
+- jquery.dd is antiquated and not on npm
+- jquery validate has changed a bit, not sure if that's the right npm packes.- check community events etc work.
+- backbone.collectionView doesn't appear to be on npm
+- backform oddly needs to be backform/src/backform to require ok
+- dateshim very old and not on NPM but prob needed in some form
+- jquery.waypoints is on NPM but can't require after installing.
+
+Can't load gmaps via require as synchronous in node; need to rework code that does that.
+Hacky code in base.js to export the Iznik global - is that right?
+
+Changed webpack.config.dev to provide jQuery - some plugins assume

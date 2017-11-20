@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>Freegle</title>
+</head>
+<body>
+<!--TODO Schema from index.php-->
+<noscript>
+    <h1>Please enable Javascript</h1>
+
+    <p>
+        We'd love to do a version which was accessible to people who don't use Javascript, but we do not have the
+        resources to do that.
+        If you'd like to help with skills or funding, please <a href="mailto:geeks@ilovefreegle.org">mail us</a>.
+    </p>
+</noscript>
+<div id="root"></div>
+<div id="fb-root"></div>
+<div id="bodyEnvelope">
+    <div id="bodyContent" class="nopad">
+    </div>
+</div>
+<div id="botleft"/>
+<!-- Some nonsense to make browsers remember user/password. -->
+<div id="hiddenloginform" style="display: none">
+    <form action="" method="post">
+        <input type="text" name="email" id="hiddenloginemail"/>
+        <input type="password" name="password" id="hiddenloginpassword"/>
+        <input type="submit" value="Login" id="hiddenloginsubmit"/>
+    </form>
+</div>
+</body>
+</html>
